@@ -16,6 +16,8 @@
 }
 
 :root{
+    width:90%;
+    margin:auto;
     --base-color:#fff;
     --bg-h2-color:rgb(231, 231, 231);
     --dark-color:#010101;
