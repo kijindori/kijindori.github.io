@@ -16,7 +16,7 @@
 }
 
 :root{
-    width:90%;
+    width:100%;
     margin:auto;
     --base-color:#fff;
     --bg-h2-color:rgb(231, 231, 231);
@@ -108,7 +108,7 @@ h4{
 main{
     display: flex;
     flex-direction: column;
-    max-width: 80rem;
+    max-width: 95rem; 
     padding: 1rem;
     margin: 7rem auto;
 }
@@ -235,9 +235,10 @@ article{
 }
 .grid{
     display:grid;
-    width:100%;
-    padding: 12rem;
+    width:83%;
+    
     grid-template-columns: 57% 43%;
+    grid-column-gap: 3rem;
     grid-row-gap: 2rem;
     padding : 0 1rem;
 }
@@ -255,6 +256,10 @@ article{
 }
 .img_container{
     display:flex;
+    width:100%;
+}
+
+.img_container>div{
     width:100%;
 }
 

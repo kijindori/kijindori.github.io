@@ -20,28 +20,35 @@
                         <div class="grid">
                             <div class="img_container">
                                 <div>
-                                    <img class="ld" src="./image/platformer.gif" alt="platformer">
-                                    <img class="md" src="./image/platformer.gif" alt="platformer">
+                                    <img class="ld" src="./image/multiplay.gif" alt="platformer">
+                                    <img class="md" src="./image/multiplay.gif" alt="platformer">
                                 </div>
                             </div>
                             <div>
+                                <p>
+                                    [개인 프로젝트]
+                                </p>
                                 <a href="https://github.com/kijindori/platformer" class="link" >
                                     <img src="./image/github.png" alt="Github" class="icons">
                                     소스코드
                                 </a>
                                 <ul class="indented">
                                     <p>
-                                        C++와 Win32 API 를 활용해서 구현했습니다.
+                                        <strong>C++ / Win32 API</strong>
+                                    </p>
+                                    <p>
+                                        마우스 및 키보드 입력을 처리하여 캐릭터를 이동하거나 상태를 갱신하도록 했습니다.
+                                    </p>
+                                    <p>
+                                        서버를 통해 갱신된 캐릭터의 위치나 상태를 동기화하도록 했습니다.
+                                        IOCP를 통해 비동기 I/O를 처리했고, 
+                                        멀티 스레드 환경에서 임계 영역을 통한 동기화를 경험했습니다.
+                                    </p>
+                                    <p>
+                                        힙에 할당된 메모리를 해제할 시점을 선택하거나 오류가 나지 않는 상황에서 해결해야할 문제가 생길 때, 수정하는 것이 난감했는데 그 과정에서
+                                        깔끔한 구조의 중요성과 프로그램의 동작 과정을 잘 추적할 수 있는 능력의 필요성을 체감했습니다.
                                     </p>
                                 </ul>
-                                <p>
-                                    발판을 밟아 점프하며 이동하는 형태의 게임입니다.
-                                </p>
-                                <p>
-                                    루프를 돌며 입력을 받고 받은 입력대로 캐릭터의 위치를 조정하도록 했습니다. 카메라가 캐릭터의 위치를 따라 이동하게 하였고, 각 기능별로 클래스를 만들었습니다.
-                                </p>
-                                
-                                
                             </div>
                             
                         </div>
@@ -69,29 +76,63 @@
 
                                     
                          
-                                <ol class="indented">
+                                <div class="indented">
+                                    <p>
+                                        <strong>HTML / CSS / JavaScript / Chrome Extension API </strong>
+                                    </p>
+                                    <p>
+                                        [4인 팀프로젝트]
+                                    </p>
                                     <a href="https://github.com/kijindori/watchmark" class="link" >
                                         <img src="./image/github.png" alt="Github" class="icons">
                                         소스코드
                                     </a>
                                     <p>
-                                        웹 문서를 찾아 읽을 때 유튜브 플레이리스트를 틀어두는 편인데, 유튜브 페이지로 돌아가서 다른 플레이리스트에 접근하는게 다소 불편해서 만들었습니다.
+                                        여러 OTT 콘텐츠를 각 플랫폼에서 접근하는게 불편하여 한 곳에서 접근하기 위해 개발했습니다.
                                     </p>
                                     <p>
-                                        찜한 OTT 콘텐츠를 다른 웹페이지를 보는 중에도 접근할 수 있도록 크롬 확장 프로그램으로 찜하기 기능을 구현했습니다.
+                                        크롬 확장프로그램을 설치하고 OTT 플랫폼 페이지에 접속하면, 콘텐츠의 우측 하단에 버튼이 생성되고 해당 버튼을 통해 
+                                        관심 콘텐츠를 추가할 수 있도록 했습니다.
                                     </p>
                                     <p>
-                                        HTML, CSS, JavaScript 및 크롬 확장 프로그램 API를 활용했습니다.
+                                        찜한 콘텐츠의 정보를 서버DB에 저장하고 불러올 수 있도록 했고, 팝업창에서 사용자의 콘텐츠 목록을 조회하도록 했습니다.
                                     </p>
-                                        
-
                                     
-                                </ol>
-                               
+                                </div>
+                                <div class="img_container">
+                                    <div>
+                                        <img class="ld" src="./image/DB설계.PNG" alt="watchmark">
+                                        <img class="md" src="./image/DB설계.PNG" alt="watchmark">
+                                    </div>
+                                    <div>
+                                        <img class="ld" src="./image/api설계.PNG" alt="watchmark">
+                                        <img class="md" src="./image/api설계.PNG" alt="watchmark">
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="indented">
+                                    <strong> 역할 </strong>
+                                    <p> API, DB 설계 및 크롬 확장 프로그램 구현 </p>
+                                    <p>
+                                        구현에 앞서 ERD 와 테이블 상세를 준비했고, 어떻게
+                                        테이블을 구성할지 고민했습니다.
+                                    </p>
+                                    <p>
+                                        기본 키를 잘 선택해야함을 느꼈고, 적절히 복합키를 선택했습니다. 인덱싱을 활용하여 자주 조회하는 컬럼에 대한 검색 속도를 높였습니다.
+                                    </p>
+                                    <p>
+                                        API를 설계하는 과정에서 어떤 종류의 데이터를 주고받아야 하는지 고민했고,
+                                        서버와 사용자 화면의 데이터 일관성 문제에 대해 고민했습니다.
+                                    </p>
+                                    <p>
+                                        외관상 버튼 하나를 추가하는 것은 단순해보이지만, 그 안에서 꽤 많은 종류의 데이터가 오가고
+                                        생각해보아야 할 점이 많다는 걸 느끼게 됐습니다.
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
-                        
-                
                 </section>
             </div>
         </main>
