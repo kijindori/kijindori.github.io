@@ -110,7 +110,7 @@ main{
     flex-direction: column;
     max-width: 95rem; 
     padding: 1rem;
-    margin: 7rem auto;
+    margin: 0rem auto;
 }
 
 #root{
